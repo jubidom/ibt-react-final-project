@@ -1,0 +1,262 @@
+.newsletterSection {
+  padding: 0.7rem 1.6rem;
+  background: linear-gradient(135deg, #f9f9ff, #eef1f8);
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.8);
+  max-width: 750px;
+  margin: 1.2rem auto;
+  animation: fadeInUp 0.8s ease-in-out;
+}
+
+.newsletterContent {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.newsletterContent h2 {
+  font-size: 1.9rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.6rem;
+  color: #1a237e;
+  font-weight: 600;
+  animation: fadeInDown 0.8s ease-in-out;
+}
+
+.newsletterContent p {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  font-weight: 500;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Newsletter Form */
+.newsletterForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.newsletterForm input {
+  padding: 0.85rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 320px;
+  font-size: 1rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.newsletterForm input:focus {
+  outline: none;
+  border-color: #1a237e;
+  box-shadow: 0 0 6px rgba(26, 35, 126, 0.4);
+}
+
+.newsletterForm button {
+  padding: 0.85rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background: #1a237e;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 320px;
+}
+
+.newsletterForm button:hover {
+  background: #303f9f;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(26, 35, 126, 0.3);
+}
+
+/* Extra Info */
+.extraInfo {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.extraInfo h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #1a237e;
+}
+
+.contactText {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.5;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 500;
+}
+
+/* Contact Details */
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  margin: 0 auto 1.5rem auto;
+}
+
+.contactDetails p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #333;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Social Links */
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 4px;
+  flex-wrap: wrap;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.socialLinks a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #333;
+  transition: transform 0.3s ease;
+}
+
+.socialLinks a:hover {
+  transform: scale(1.12);
+}
+
+.socialLinks a svg {
+  font-size: 1.6rem;
+  padding: 0.7rem;
+  border-radius: 50%;
+  margin-bottom: 0.4rem;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.socialLinks a:hover svg {
+  transform: rotate(8deg) scale(1.1);
+}
+
+/* Brand Colors */
+.socialLinks a:nth-child(1) svg {
+  background: #1877f2;
+}
+.socialLinks a:nth-child(2) svg {
+  background: #e1306c;
+}
+.socialLinks a:nth-child(3) svg {
+  background: #1da1f2;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .newsletterContent h2 {
+    font-size: 1.6rem;
+  }
+
+  .newsletterContent p {
+    font-size: 0.95rem;
+  }
+
+  .newsletterForm input,
+  .newsletterForm button {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .socialLinks {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .newsletterSection {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .newsletterContent h2 {
+    font-size: 1.4rem;
+  }
+
+  .newsletterContent p {
+    font-size: 0.9rem;
+  }
+
+  .socialLinks a svg {
+    font-size: 1.4rem;
+    padding: 0.6rem;
+  }
+}
+
+/* ✨ Animations */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* 🌙 Dark Mode Support */
+.dark .newsletterSection {
+  background: linear-gradient(135deg, #1e1e1e, #121212);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
+}
+
+.dark .newsletterContent h2,
+.dark .extraInfo h3 {
+  color: #ff7f50;
+}
+
+.dark .newsletterContent p,
+.dark .contactText,
+.dark .contactDetails p {
+  color: #ddd;
+}
+
+.dark .newsletterForm input {
+  background: #222;
+  border: 1px solid #444;
+  color: #fff;
+}
+
+.dark .newsletterForm input::placeholder {
+  color: #aaa;
+}
+
+.dark .newsletterForm button {
+  background: #ff7f50;
+  color: #fff;
+}
+
+.dark .newsletterForm button:hover {
+  background: #e5673f;
+}
+
+.dark .socialLinks a {
+  color: #eee;
+}

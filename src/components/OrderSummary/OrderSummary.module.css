@@ -1,0 +1,28 @@
+.orderSummary {
+  flex: 1;
+  min-width: 280px;
+  max-width: 400px;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: #fff;
+  font-family: Arial, sans-serif;
+}
+.items {
+  margin-bottom: 1rem;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.totals p {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  margin: 0.25rem 0;
+}
+.total {
+  font-weight: bold;
+  font-size: 1.1rem;
+}

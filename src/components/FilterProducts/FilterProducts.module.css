@@ -1,0 +1,46 @@
+.filterBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0 2rem;
+  flex-wrap: wrap;
+}
+
+.searchInput {
+  flex: 1;
+  max-width: 400px;
+  padding: 0.6rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+
+.categorySelect {
+  width: 300px;
+  padding: 0.6rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: bold; /* all options bold */
+  color: gray;
+}
+
+/* Make only "Choose Category" extra bold */
+.categorySelect option[value=""] {
+  font-weight: 700;
+}
+
+/* Hide search input on mobile devices */
+@media (max-width: 768px) {
+  .searchInput {
+    display: none;
+  }
+
+  .categorySelect {
+    flex: 1; /* let dropdown stretch */
+    width: 100%;
+  }
+}
+
+

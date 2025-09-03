@@ -1,0 +1,96 @@
+.blogPage {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+/* Heading */
+.heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: var(--text); /* uses theme text color */
+}
+
+/* Add Post Form */
+.form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1); 
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 3rem auto; /* center + spacing below */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.85);
+}
+
+/* Inputs & Textarea */
+.input,
+.textarea {
+  padding: 1rem 1.2rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-family: inherit;
+  outline: none;
+  transition: border 0.25s ease, box-shadow 0.25s ease;
+  resize: none;
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: #ea580c; /* 🔥 burnt orange */
+  box-shadow: 0 0 0 3px rgba(234, 88, 12, 0.25);
+}
+
+/* Button */
+.button {
+  background: linear-gradient(135deg, #ea580c, #f97316); /* 🔥 burnt orange */
+  color: #fff;
+  padding: 0.9rem 1.5rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(234, 88, 12, 0.35);
+}
+
+/* Posts Grid */
+/* Posts Grid */
+.posts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 🔥 4 per row on desktop */
+  gap: 2rem;
+  justify-items: center;
+  padding: 1rem 0 3rem;
+}
+
+/* Tablet view (2 per row) */
+@media (max-width: 1024px) {
+  .posts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile view (1 per row) */
+@media (max-width: 640px) {
+  .posts {
+    grid-template-columns: 1fr;
+  }
+}
+

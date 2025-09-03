@@ -1,0 +1,35 @@
+.toast {
+  white-space: nowrap; 
+  max-width: 1000px; 
+  overflow: hidden;          
+  text-overflow: ellipsis;  
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: linear-gradient(135deg, #4cafef, #1976d2);
+  color: #fff;
+  font-weight: 500;
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  animation: slideIn 0.3s ease, fadeOut 0.3s ease 2.2s forwards;
+  z-index: 2000;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+}

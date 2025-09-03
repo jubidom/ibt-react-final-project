@@ -1,0 +1,143 @@
+.footer {
+  background: #111;
+  color: #fff;
+  padding: 3rem 1rem 1rem;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f8f8f8;
+}
+
+.links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.links ul li {
+  font-weight: 500;
+}
+
+.links ul li a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.links ul li a:hover {
+  color: #CC5500;
+}
+
+/* Social Section */
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social h4 {
+  margin-bottom: 0.5rem;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap; 
+  gap: 0.8rem;       
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.icon:hover {
+  transform: scale(1.15);
+}
+
+/* Tooltip */
+.icon::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s, transform 0.3s;
+  font-size: 0.75rem;
+  z-index: 10;
+}
+
+.icon:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(5px);
+}
+
+/* Hover colors */
+.whatsapp:hover { background-color: #25D366; }
+.facebook:hover { background-color: #1877F2; }
+.twitter:hover { background-color: #1DA1F2; }
+.youtube:hover { background-color: #FF0000; }
+.linkedin:hover { background-color: #0077B5; }
+.tiktok:hover { background-color: #000000; }
+.telegram:hover { background-color: #0088cc; }
+
+/* Bottom bar */
+.bottomBar {
+  margin-top: 2rem;
+  border-top: 1px solid #333;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+  .socialIcons {
+    flex-wrap: wrap; /* allow wrapping on tablets if needed */
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .social {
+    margin-top: 1.5rem;
+  }
+  .socialIcons {
+    flex-wrap: wrap; /* wrap gracefully on small screens */
+    gap: 1rem;
+  }
+}

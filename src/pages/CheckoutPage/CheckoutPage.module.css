@@ -1,0 +1,47 @@
+.checkoutPage {
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+.checkoutContainer {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.checkoutForm {
+  flex: 1;
+  min-width: 280px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.checkoutForm input,
+.checkoutForm select,
+.checkoutForm textarea {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+.checkoutForm button {
+  padding: 0.75rem;
+  border-radius: 8px;
+  background: #0070f3;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.checkoutForm button:hover {
+  background: #005bb5;
+}
+
+/* Mobile & Tablet Responsiveness */
+@media (max-width: 768px) {
+  .checkoutContainer {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
