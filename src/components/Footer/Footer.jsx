@@ -112,8 +112,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-
-// Internal links (Products, Cart, Contact) use React Router’s <Link> and won’t reload the page.
-
-// External links (WhatsApp, Facebook, etc.) still use <a> because they must open external sites.

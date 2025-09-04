@@ -59,7 +59,7 @@ export default function CartPage() {
         {/* Right - Checkout Summary */}
         <div className={styles.summary}>
           <h2>Summary</h2>
-          <p> <strong>Total Items:</strong> {totalItems}</p>
+          <p><strong>Total Items:</strong> {totalItems}</p>
           <p><strong>Total Price: </strong>${totalPrice.toFixed(2)}</p>
           <button
             className={styles.checkoutBtn}
@@ -73,4 +73,8 @@ export default function CartPage() {
     </div>
   );
 }
+
+
+
+
 

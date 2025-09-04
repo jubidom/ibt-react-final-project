@@ -1,4 +1,3 @@
-// main.jsx
 import { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
@@ -19,7 +18,7 @@ import BlogPage from "./pages/BlogPage/BlogPage";
 import AdminPanel from "./pages/AdminPanel/AdminPanel";
 import AboutUsPage from "./pages/AboutUs/AboutUs";
 import AccountSettingsPage from "./pages/AccountSettings/AccountSettings";
-import { BlogProvider } from "./context/BlogContext"; // 👈 add this
+import { BlogProvider } from "./context/BlogContext"; 
 
 // API helpers
 import { fetchProducts, fetchProductById } from "./utils/api";

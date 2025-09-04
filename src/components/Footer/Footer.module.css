@@ -124,7 +124,7 @@
     text-align: center;
   }
   .socialIcons {
-    flex-wrap: wrap; /* allow wrapping on tablets if needed */
+    flex-wrap: wrap; 
   }
 }
 
@@ -137,7 +137,7 @@
     margin-top: 1.5rem;
   }
   .socialIcons {
-    flex-wrap: wrap; /* wrap gracefully on small screens */
+    flex-wrap: wrap;
     gap: 1rem;
   }
 }

@@ -5,7 +5,7 @@ const Toast = ({ message, onClose }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       onClose();
-    }, 2000); // auto-hide after 2s
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, [onClose]);

@@ -162,9 +162,8 @@ section::before {
   color: #777;
 }
 
-/* -------------------- */
 /* DARK MODE OVERRIDES */
-/* -------------------- */
+
 .dark section::before {
   background: linear-gradient(135deg, #1e1e1e, #121212);
 }
@@ -255,7 +254,7 @@ section::before {
   color: #ccc !important;
 }
 
-/* ✅ Make sure animated blocks keep visible state after anim */
+/* Make sure animated blocks keep visible state after anim */
 .ceoBio,
 .executiveCard,
 .executivesSection {

@@ -1,7 +1,6 @@
 import { useSelector, useDispatch } from "react-redux";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
 import calculateOrderTotals from "../../utils/calculateOrderTotals";
 import { selectCartItems, clearCart } from "../../store/cartSlice";
 import OrderSummary from "../../components/OrderSummary/OrderSummary";
@@ -13,22 +12,17 @@ export default function CheckoutPage() {
   const navigate = useNavigate();
   const [country, setCountry] = useState("USA");
 
-  // Calculate totals dynamically
   const { subtotal, shipping, total } = calculateOrderTotals(cartItems, country);
 
-  // Handle country selection
   const handleCountryChange = (e) => setCountry(e.target.value);
 
-  // Handle Place Order button
   const handleSubmit = (e) => {
-    e.preventDefault(); // prevent page reload
-
+    e.preventDefault();
     if (cartItems.length === 0) {
       alert("Your cart is empty!");
       return;
     }
 
-    // Collect form data
     const formData = {
       fullName: e.target.fullName.value,
       email: e.target.email.value,
@@ -39,24 +33,14 @@ export default function CheckoutPage() {
       country: e.target.country.value,
     };
 
-    // Navigate to ConfirmationPage with cart + form data
-    navigate("/confirmation", {
-      state: {
-        formData,
-        cartItems,
-      },
-    });
-
-    // Clear cart after placing order
+    navigate("/confirmation", { state: { formData, cartItems } });
     dispatch(clearCart());
   };
 
   return (
     <div className={styles.checkoutPage}>
       <h1>Checkout</h1>
-
       <div className={styles.checkoutContainer}>
-        {/* Shipping / Billing Form */}
         <form className={styles.checkoutForm} onSubmit={handleSubmit}>
           <input type="text" name="fullName" placeholder="Full Name" required />
           <input type="email" name="email" placeholder="Email" required />
@@ -71,11 +55,8 @@ export default function CheckoutPage() {
           <button type="submit">Place Order</button>
         </form>
 
-        {/* Order Summary */}
         <OrderSummary subtotal={subtotal} shipping={shipping} total={total} />
       </div>
     </div>
   );
 }
-
-

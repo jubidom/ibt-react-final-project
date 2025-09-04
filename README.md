@@ -8,10 +8,14 @@ React Router for navigation and product data from the Fake Store API (https://fa
 - Products Page
   - Fetches and displays a list of products from: https://fakestoreapi.com/products
   - Displays product image, title, price, and category.
+
 - Product Details Page
   - When a product is clicked, navigates to a details page using dynamic routing.
   - Fetches product details from: https://fakestoreapi.com/products/{id}
   - Displays product image, title, description, category, and price.
+  - Fetches blog post from: https://jsonplaceholder.typicode.com/posts?_limit=20
+  - Displays blog title and post text. 
+
 - Navigation
   - Implements React Router for navigation between:
     - Home/Products page
@@ -21,6 +25,7 @@ React Router for navigation and product data from the Fake Store API (https://fa
     - Blog page
     - Registration/Login page
     - Cart page
+
 - Dark theme
  
 ## Technologies

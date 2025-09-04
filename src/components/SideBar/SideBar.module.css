@@ -218,7 +218,6 @@
   font-size: 1.2rem; 
   width: 1.2rem;
   height: 1.2rem;
-   /* vertical-align: middle; */
 }
 
 /* Theme toggle color (burnt orange) */
@@ -242,7 +241,7 @@
 
   .closeBtn {
     font-size: 1.3rem;
-    color: red;
+    color: #fff;
   }
 
   .navLinks li a,

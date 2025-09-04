@@ -9,7 +9,7 @@
 .wordmark {
   display: flex;
   align-items: center;
-  gap: 0.5rem; /* spacing between icon and text */
+  gap: 0.5rem; 
   font-weight: bold;
   font-size: 1.25rem;
   cursor: pointer;
@@ -52,7 +52,7 @@
 .wordmark:hover .icon,
 .stacked:hover .icon {
   transform: rotate(-10deg);
-  stroke: #FF512F; /* warm gradient start */
+  stroke: #FF512F; 
 }
 
 .wordmark:hover .text,
@@ -61,74 +61,4 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-
-
-/* .icon {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.wordmark {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem; 
-  font-weight: bold;
-  font-size: 1.25rem; 
-}
-
-.stacked {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-weight: bold;
-  font-size: 1rem;
-}
-
-.text {
-  font-family: "Poppins", sans-serif;
-}
-
-.logoLink {
-  display: flex;
-  align-items: center;
-  text-decoration: none; 
-  color: inherit; 
-  }
-
-  .wordmark,
-.stacked {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.wordmark:hover,
-.stacked:hover {
-  transform: scale(1.08);
-}
-
-.icon {
-  transition: transform 0.3s ease, stroke 0.3s ease;
-}
-
-.wordmark:hover .icon,
-.stacked:hover .icon {
-  transform: rotate(-10deg);
-  stroke: aqua; 
-}
-
-.text {
-  font-weight: bold;
-  font-size: 1.5rem;
-  transition: color 0.3s ease;
-}
-
-.wordmark:hover .text,
-.stacked:hover .text {
-  color: aqua;
-} */
-
 

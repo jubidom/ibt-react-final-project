@@ -12,6 +12,13 @@
   color: #111;
 }
 
+
+.productsPage[data-theme="dark"] h1 {
+  color: #f9fafb; 
+}
+
+
+/* Grid */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -34,18 +41,15 @@
   }
   .productsPage h1 {
     font-size: 1.6rem;
-    color: #fff;
   }
   .grid {
-    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 1rem;
   }
 }
 
-
 @media (max-width: 480px) {
   .grid {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
   }
 }

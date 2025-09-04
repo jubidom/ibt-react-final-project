@@ -188,4 +188,13 @@
     width: 100%;
     max-width: 320px;
   }
+  .featured{
+    order:2
+  }
+  .content{
+    order: 1;
+  }
+  .featuredTitle {
+    color: #fff;
+  }
 }

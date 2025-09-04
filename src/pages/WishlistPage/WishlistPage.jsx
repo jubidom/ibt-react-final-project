@@ -1,9 +1,7 @@
-// src/pages/WishlistPage/WishlistPage.jsx
 import { useLoaderData } from "react-router-dom";
-// import styles from "./WishlistPage.module.css";
 
 export default function WishlistPage() {
-  const wishlist = useLoaderData(); // 👈 comes from loader
+  const wishlist = useLoaderData();
 
   return (
     <div className={styles.wishlistPage}>

@@ -1,8 +1,8 @@
 .postCard {
-  background: linear-gradient(145deg, #ffffff, #f9fafb); /* 🔥 soft gradient */
-  border: 1px solid rgba(0, 0, 0, 0.6);                /* subtle border */
-  border-radius: 20px;                                  /* smoother corners */
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);           /* deeper shadow */
+  background: linear-gradient(145deg, #ffffff, #f9fafb); 
+  border: 1px solid rgba(0, 0, 0, 0.6);                
+  border-radius: 20px;                                  
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);          
   padding: 1.8rem;
   display: flex;
   flex-direction: column;
@@ -74,8 +74,17 @@
   }
   .title {
     font-size: 1.1rem;
+    display: block;
+    -webkit-line-clamp: unset;
+    -webkit-box-orient: unset;
+    overflow: visible;
   }
   .body {
     font-size: 0.9rem;
+    display: block;
+    -webkit-line-clamp: unset;
+    -webkit-box-orient: unset;
+    overflow: visible;
+    max-height: none;
   }
 }

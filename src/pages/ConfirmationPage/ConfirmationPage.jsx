@@ -12,11 +12,10 @@ export default function ConfirmationPage() {
   return (
     <div className={styles.confirmationPage}>
       <h1>Thank you for your order!</h1>
-
       <div className={styles.detailsContainer}>
         {/* Shipping Info */}
         <div className={styles.shippingInfo}>
-          <h2>Domestic Orders/Shipping Info</h2>
+          <h2>Domestic Orders / Shipping Info</h2>
           <p>{formData.fullName}</p>
           <p>{formData.email}</p>
           <p>{formData.address}</p>
@@ -34,7 +33,6 @@ export default function ConfirmationPage() {
             const name = product.title ?? product.name ?? "Item";
             const price = Number(product.price) || 0;
             const quantity = Number(item.qty ?? 0);
-
             return (
               <div key={item.id ?? index} className={styles.item}>
                 <span>{name} x {quantity}</span>

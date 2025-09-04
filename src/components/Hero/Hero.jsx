@@ -40,7 +40,7 @@ export default function Hero() {
   return (
     <section className={styles.hero} id="hero">
       {/* LEFT: Featured Products */}
-      <div className={styles.featured}>
+      <div className={styles.featured} tabIndex={2}>
         <h2 className={styles.featuredTitle}>🔥 Featured Picks</h2>
 
         {status === "loading" && <p>Loading featured...</p>}
@@ -72,7 +72,7 @@ export default function Hero() {
       </div>
 
       {/* RIGHT: Hero Content */}
-      <div className={styles.content}>
+      <div className={styles.content} tabIndex={1}>
         <h1 className={styles.headline}>Welcome to Sweethours Store</h1>
         <p className={styles.subtext}>
           Discover amazing products, hand-picked just for you. Shop smart, shop stylish.

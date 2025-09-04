@@ -32,7 +32,7 @@ export default function Product() {
 
   const goBack = () => navigate(-1);
 
-  // 👇 wrap-around logic
+  //  wrap-around logic
   const goPrev = () => {
     if (id === 1) {
       navigate(`/products/${totalProducts}`); // first → last

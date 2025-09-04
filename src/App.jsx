@@ -3,21 +3,15 @@ import { Outlet } from "react-router-dom";
 import { ToastContainer, Slide} from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-// ----------------------
 // 2. Global Layout Components
-// ----------------------
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 
-// ----------------------
 // 3. Context Provider
-// ----------------------
 import { AppProvider } from "./context/AppContext";
 import AuthForm from "./components/AuthForm/AuthForm";
 
-// ----------------------
 // 4. Main Layout Component
-// ----------------------
 const App = () => {
   return (
     <AppProvider>
